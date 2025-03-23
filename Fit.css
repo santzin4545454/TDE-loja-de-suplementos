@@ -1,0 +1,192 @@
+@charset "UTF-8";
+:root{
+    --cor1:#41F08F;
+    --cor2:#5AAD80;
+    --cor3:#4F705E;
+    --cor4:#303D36;
+
+}
+
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+header{
+    
+    background-image: linear-gradient(rgb(95, 155, 123), #5AAD80 );
+    margin: auto;
+    height: 190px;
+    position: relative;
+
+}
+#burguer{
+    background-color: #54db91;
+    margin: 0px;
+    position: absolute;
+    box-shadow: 3px 2px 3px 0px #00000040;
+    border-radius:5px;
+    cursor: pointer;
+
+}
+#itens{
+    display:none;
+    background-color: #54db91;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 24.5px;
+    
+    
+}
+header>menu>ul{
+    margin: 0px;
+    padding: 0px 25px;
+
+}
+
+#logo>a>img{
+    width: 140px;
+
+}
+#logo{
+    position: relative;
+    top:7px;
+    text-align: center;
+      
+}
+#marcas{
+    
+    padding: 0px 0px;
+    position: absolute;
+    right:60px;
+    top: -22.5px;
+    text-align: right ;
+    width: 250px;
+   
+    
+}
+#marcas>h1{
+    position: relative;
+    right: 50px;
+}
+@media screen and (max-width:865px) {
+    #marcas>img{
+        height: 102px;
+        width: 200px ;
+    }
+    #marcas{
+        position: absolute;
+        right: 35px;
+    }
+    #logo{
+        top: 30px;
+    }
+    #logo>a>img{
+        width: 120px;
+    
+    }
+    
+}
+
+#menu{
+    display: flex;
+    bottom: 50px ;
+    position: absolute; 
+    position: absolute;
+    bottom: 10px;
+    
+}
+
+.nomesmenu{
+    box-shadow: 3px 2px 3px 0px #00000040;
+    padding: 5px;
+    margin: 5px;
+    background-color: #54db91;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius:5px;
+}
+.nomesmenu:hover{
+    color: white;
+    background-color:#49a070 ;
+    transition-duration: 0.3s;
+}
+.subcat{
+    display: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    box-shadow: 3px 2px 3px 0px #00000040;
+    
+    
+}
+#categorias:hover>.subcat{
+    display: block;
+}
+#wheys:hover>.subcat{
+    display: block;
+}
+#creatinas:hover>.subcat{
+    display: block;
+}
+#hipercaloricos:hover>.subcat{
+    display: block;
+}
+
+#categoriasmarcas>h1{
+    background-color: #41F08F;
+    text-align: center;
+}
+#categoriasmarcas{
+
+    text-align: center;
+}
+#categoriasmarcas>div>img{
+    margin: 15px;
+}
+#outros:hover>.subcat{
+    display: block;
+}
+form{
+    margin: auto;
+    line-height: 2rem;
+    text-align: center;
+    width: 500px;
+    border: solid var(--cor3);
+    
+    
+}
+form>h2{
+    text-align: center;
+}
+
+.formulario{
+    margin: 5px 2px;
+    padding: 3px;
+    border-radius: 3px;
+    
+
+}
+#obj{
+    text-align: center;
+}
+@media screen and (max-width: 865px) {
+
+    #menu{
+        display: none;
+    }
+    
+    
+}
+@media screen and (min-width: 865px) {
+    #burguer{
+        display: none;
+    }
+    
+}
+
